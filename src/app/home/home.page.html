@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Pull To Refresh
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content pullingIcon="chevron-down-circle-outline" pullingText="Pull To refresh"
+      refreshingText="Refreshing..."></ion-refresher-content>
+  </ion-refresher>
+  <p>Pull to refresh is not looking too hot.</p>
+</ion-content>
